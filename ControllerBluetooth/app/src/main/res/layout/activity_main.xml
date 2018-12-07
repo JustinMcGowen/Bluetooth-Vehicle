@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="justin.controllerbluetooth.MainActivity">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:max="8"
+        android:progress="4"
+        android:rotation="0"
+        android:visibility="visible" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <Button
+        android:id="@+id/signal2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:rotation="90"
+        android:text="Left" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/signal"
+        android:layout_gravity="bottom|end"
+        android:layout_toEndOf="@+id/signal4"
+        android:rotation="90"
+        app:backgroundTint="#3498db"
+        app:srcCompat="@drawable/ic_bluetooth"
+        app:useCompatPadding="true" />
+
+    <Button
+        android:id="@+id/signal"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="124dp"
+        android:rotation="90"
+        android:text="Right" />
+
+    <Button
+        android:id="@+id/signal3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="71dp"
+        android:rotation="90"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/signal4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/signal3"
+        android:rotation="90"
+        android:text="Forward" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="97dp"
+        android:layout_height="158dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="263dp"
+        android:gravity="center"
+        android:rotation="90"
+        android:text="TextView"
+        tools:text="Hello World" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@android:style/Widget.SeekBar"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:max="8"
+        android:progress="4"
+        android:rotation="0"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:rotation="90"
+        android:layout_marginStart="12dp"
+        app:srcCompat="@drawable/ic_stop_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/output"
+        android:layout_alignStart="@+id/imageButton"
+        android:rotation="90"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_alignTop="@+id/output"
+        android:rotation="270"
+        app:srcCompat="@drawable/ic_play_arrow" />
+
+
+</RelativeLayout>
